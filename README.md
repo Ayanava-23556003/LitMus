@@ -1,34 +1,42 @@
-# ⚗ LitMus
+# LitMus — Local Academic Literature Synthesis Workplace
 
-**Free, Fully Local AI Literature Summarization & Review Engine**  
-Powered by **Ollama** and **Llama 3.2** — runs 100% locally on your personal host device. No API configuration keys needed, zero cloud dependencies, complete intellectual privacy protection.
-
----
-
-## ✨ Features
-
-- 🔒 **Absolute Data Privacy:** Documents never touch external clouds, servers, or networks.
-- 🚫 **No API Key Obstacles:** No developer accounts, subscription costs, limits, or configuration key friction.
-- 📄 **Multiformat Input Vectors:** Parses **PDF, DOCX, TXT, and MD** manuscripts seamlessly.
-- 📝 **Structured Yield:** Compiles an expert ~500-word paragraph breakdown synthesized with a clean 5-component markdown row grid table.
-- 💾 **Polished Export Layouts:** Native structural text dumps and custom vector formatting **PDF** output capabilities.
-- 🖥️ **Clean Dark Workspace GUI:** Intuitive desktop layout dashboard with embedded step-by-step automatic configuration guides for Ollama integration.
+LitMus is a secure, 100% local desktop application designed to distill complex academic research papers into structured, publication-ready literature reviews. Powered entirely by Ollama and the `llama3.2` architecture, LitMus processes your files fully offline—requiring zero API keys, zero internet access, and costing nothing.
 
 ---
 
-## 🚀 Quick Start Deployment
+##  Key Features
 
-1. Grab the executable artifact package `LitMus.exe` inside the repository [Releases](../../releases) panel.
-2. Fire up the software — the embedded onboarding subsystem automatically prepares your machine's background Ollama parameters.
-3. Complete the one-time model core build pull (~2GB framework files) — then execute analysis pipelines 100% offline indefinitely.
-
-**No registration strings. No usage bills. Full operational security.**
+* **Complete Privacy & Isolation:** Runs entirely on your local machine. No external packets leak, and your research data never touches a third-party cloud.
+* **Smart Text Extraction:** Drag, drop, or map standard documentation payloads, including PDF, DOCX, TXT, and MD files.
+* **Advanced Synthesis Matrix:** Automatically generates a cohesive, scholarly narrative (~500 words) paired with an isolated 5-part comparative table mapping:
+  * Background
+  * Objectives
+  * Methodological Approach
+  * Primary Outcomes / Key Findings
+  * System Gaps
+* **Built-in PDF & Text Compiler:** Copy the raw payload directly to your clipboard or compile the structured layout into a clean, formatted vector PDF report.
 
 ---
 
-## 🐍 Source Verification Sandbox
+##  System Architecture & Prerequisites
 
-```bash
-git clone [https://github.com/YOUR_USERNAME/LitMus.git](https://github.com/YOUR_USERNAME/LitMus.git)
-cd LitMus
-run.bat          # Verifies host dependencies silently and launches client framework
+LitMus acts as a native execution layer over an isolated local background service daemon.
+
+* **Engine:** Ollama (Service automated on launch if missing)
+* **Model Context:** `llama3.2` (~2GB architecture)
+* **Minimum RAM Baseline:** 8GB System RAM (16GB recommended)
+* **Storage Footprint:** ~5GB free space allocated for local model weights
+
+---
+
+##  Installation & Setup
+
+### Running from Source
+1. Clone this repository.
+2. Ensure Python 3.x is installed.
+3. Launch `litmus.py`. The application will silently handle internal dependencies (`PyPDF2`, `python-docx`, `fpdf2`) on its first lifecycle setup.
+
+### Compiling into a Standalone Executable
+If you prefer a standalone executable (`.exe`), run the provided automation layer sequence:
+```cmd
+build_exe.bat
